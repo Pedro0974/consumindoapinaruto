@@ -4,9 +4,6 @@ import {
   goToHomePage,
   goToCharactersPage,
   goToAkatsukiPages,
-  goToClansPage,
-  goToKekkeiGenkaiPages,
-  goToVillagesPage
 } from "../../routes/Coordinator";
 import { NavBarContainer, Logo, Navigations, Links } from "./Style";
 import logo from "../../_assets/naruto-logo.png";
@@ -15,9 +12,6 @@ export const NavBar = () => {
   const navigate = useNavigate();
   const pagesLinks = {
     characters: {link: 'characters', name: 'Characters'},
-    clans: {link: 'clans', name: 'Clans'},
-    villages: {link: 'villages', name: 'Villages'},
-    kekkeigenkais: {link: 'kekkeigenkais', name: 'Kekkei-Genkais'},
     akatsuki: {link: 'akatsuki', name: 'Akatsuki'},
   }
 
@@ -25,15 +19,6 @@ export const NavBar = () => {
     switch (linkName) {
       case 'characters':
         goToCharactersPage(navigate);
-        break;
-      case 'clans':
-        goToClansPage(navigate);
-        break;
-      case 'villages':
-        goToVillagesPage(navigate);
-        break;
-      case 'kekkeigenkais':
-        goToKekkeiGenkaiPages(navigate);
         break;
       case 'akatsuki':
         goToAkatsukiPages(navigate);

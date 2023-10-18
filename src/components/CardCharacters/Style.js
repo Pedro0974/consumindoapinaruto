@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 export const CharactersCard = styled.div`
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 16px; 
+    width: 100%;
 `;
 
 export const CharacterItem = styled.div`
-    width: 20%; /* 20% para 5 colunas */
+    width: 100%; 
     box-sizing: border-box;
+    margin: 0;
 `;
+
