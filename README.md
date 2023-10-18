@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Consumindo API Naruto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto React que utiliza as bibliotecas Styled-Components e Axios para consumir a API pública do Naruto. O objetivo principal deste projeto é demonstrar o uso de requisições a APIs com o Axios e a implementação de paginação com o React Router. O projeto oferece diversas funcionalidades, incluindo listagem, detalhes e filtragem de informações relacionadas ao universo de Naruto.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+1. **Listagem de Personagens**: Uma rota que exibe uma lista de personagens do universo Naruto. Os personagens são obtidos da API e apresentados de forma organizada.
 
-### `npm start`
+2. **Detalhes de Personagens**: Os usuários podem acessar detalhes de cada personagem a partir da página de listagem. Informações como nome, imagem e outros detalhes são exibidos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Listagem de Clans**: Outra rota dedicada à listagem de Clans, exibindo informações sobre os clãs presentes no mundo de Naruto.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Listagem de Villas**: Nesta seção, os usuários podem explorar informações sobre as diferentes villas, incluindo os clãs e personagens associados a cada vila.
 
-### `npm test`
+5. **Filtragem Avançada**: Oferecemos recursos de filtragem que permitem aos usuários refinar os resultados exibidos. Isso torna mais fácil encontrar informações específicas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. **Kekkei Genkais**: Uma rota dedicada a mostrar informações sobre os Kekkei Genkais no mundo de Naruto.
 
-### `npm run build`
+7. **Membros da Akatsuki**: Os usuários podem explorar informações sobre os membros da Akatsuki, um dos grupos mais notórios da série.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como Executar o Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Certifique-se de ter Node.js instalado em sua máquina. Após clonar o repositório, siga estas etapas:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Instale as dependências do projeto:
+   
+   ```
+    npm install
+   ```
 
-### `npm run eject`
+2. Inicie o aplicativo:
+   
+   ```
+    npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O aplicativo estará disponível em `http://localhost:3000/`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tecnologias Utilizadas
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React: O framework JavaScript para criar interfaces de usuário interativas.
+- Styled-Components: Uma biblioteca que permite a estilização de componentes de forma mais modular e elegante.
+- Axios: Uma biblioteca para fazer requisições HTTP.
+- React Router: Uma biblioteca para manipulação de rotas no React.
 
-## Learn More
+## Autor
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Seu nome e informações de contato, se desejar.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Licença
 
-### Code Splitting
+Este projeto está sob a licença [Inserir tipo de licença] - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Agradecimentos
 
-### Analyzing the Bundle Size
+Agradecimentos especiais a [nomes de pessoas ou organizações] por [motivo da gratidão].
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contribuições
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request.
