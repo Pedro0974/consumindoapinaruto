@@ -9,13 +9,19 @@ export const Characters = () => {
   const [listCharacters, setListCharacters] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
+  const [loading, setLoading] = useState(true); // Track loading status
   const charactersPerPage = 10;
 
   const reqCharacters = async () => {
-    const response = await axios.get(
-      `${BASE_URL_API}${collections.allCharacters}?limit=99999`
-    );
-    setListCharacters(response.data.characters);
+    try {
+      const response = await axios.get(
+        `${BASE_URL_API}${collections.allCharacters}?limit=99999`
+      );
+      setListCharacters(response.data.characters);
+      setLoading(false); // Set loading to false when data is fetched
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
 
   useEffect(() => {
@@ -50,7 +56,11 @@ export const Characters = () => {
         />
       </div>
 
-      <CardCharacters characters={currentCharacters} />
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <CardCharacters characters={currentCharacters} />
+      )}
 
       <div>
         {currentPage > 1 && (
