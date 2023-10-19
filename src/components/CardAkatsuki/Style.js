@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 
 export const AkatsukiCard = styled.div`
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 16px; 
+    width: 100%;
 `;
 
 export const AkatsukiItem = styled.div`
-    width: 20%; /* 20% para 5 colunas */
+    width: 100%; 
     box-sizing: border-box;
+    margin: 0;
 `;
 
 export const AkatsukiImage = styled.img`
