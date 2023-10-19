@@ -5,8 +5,28 @@ export const CharacterDetailComponente = ({ character }) => {
   return (
     <>
       <CharacterDetail key={character.id}>
-        <h3>{character.name}</h3>
-        <img src={character.images[0]} alt={character.name} />
+        {console.log(character)}
+        <div>
+          <img src={character.images[0]} alt={character.name} />
+        </div>
+        <div>
+          <h3>{character.name}</h3>
+
+          <span>
+            <div>
+            <label>Narutezas:</label>
+            {character.natureType.map((type) => (
+              <p key={type}>{type}</p>
+            ))}
+            </div>
+            <div>
+            <label>Ranks:</label>
+            {character.personal.kekkeiGenkai.map((type) => (
+              <p key={type}>{type}</p>
+            ))}
+            </div>
+          </span>
+        </div>
       </CharacterDetail>
     </>
   );

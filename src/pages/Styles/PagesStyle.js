@@ -9,14 +9,6 @@ export const CharactersContainer = styled.div`
     padding: 0px 20px;
 `;
 
-export const AkatsukiContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    padding: 0px 20px;
-`;
-
 export const InputFilter = styled.input`
     margin-top: 20px;
     padding: 5px;
