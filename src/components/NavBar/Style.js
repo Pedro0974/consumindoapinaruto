@@ -13,18 +13,3 @@ export const NavBarContainer = styled.div`
 export const Logo = styled.img`
     max-height: 40px; /* Tamanho máximo para o logotipo */
 `;
-
-export const Navigations = styled.div`
-    display: flex;
-    gap: 20px; /* Espaço entre os itens de navegação */
-`;
-
-export const Links = styled.div`
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    font-size: 22px;
-    &:hover {
-        color: ${colors.darkSlateGray}
-    }
-`;

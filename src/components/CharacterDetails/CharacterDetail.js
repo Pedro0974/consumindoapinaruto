@@ -19,12 +19,6 @@ export const CharacterDetailComponente = ({ character }) => {
               <p key={type}>{type}</p>
             ))}
             </div>
-            <div>
-            <label>Ranks:</label>
-            {character.personal.kekkeiGenkai.map((type) => (
-              <p key={type}>{type}</p>
-            ))}
-            </div>
           </span>
         </div>
       </CharacterDetail>

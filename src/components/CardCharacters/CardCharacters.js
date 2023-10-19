@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CharacterDetailComponente } from "../CharacterDetails/CharacterDetail";
 import { CharactersCard, CharacterItem } from "./Style";
 import styled from "styled-components";
@@ -44,6 +44,20 @@ export const CardCharacters = ({ characters }) => {
   const handleCloseModal = () => {
     setSelectedCharacter(null);
   };
+
+  const handleEscKey = (event) => {
+    if (event.key === "Escape") {
+      handleCloseModal();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleEscKey);
+
+    return () => {
+      document.removeEventListener("keydown", handleEscKey);
+    };
+  }, []);
 
   return (
     <CharactersCard>
