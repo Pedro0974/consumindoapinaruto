@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { 
-  goToHomePage,
   goToCharactersPage,
   goToAkatsukiPages,
 } from "../../routes/Coordinator";
@@ -24,7 +23,7 @@ export const NavBar = () => {
         goToAkatsukiPages(navigate);
         break;
       default:
-        goToHomePage(navigate);
+        goToCharactersPage(navigate);
     }
   };
   

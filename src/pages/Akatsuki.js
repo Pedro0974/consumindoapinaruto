@@ -3,6 +3,7 @@ import { AkatsukiContainer } from "./Styles/PagesStyle";
 import axios from "axios";
 import { BASE_URL_API, collections } from "../constans/urls";
 import { CardAkatsuki } from "../components/CardAkatsuki/CardAkatsuki";
+import { InputFilter, LabelFilter } from "./Styles/PagesStyle";
 
 export const Akatsuki = () => {
   const [listAkatsuki, setListAkatsuki] = useState([]);
@@ -41,14 +42,16 @@ export const Akatsuki = () => {
   return (
     <>
       <AkatsukiContainer>
-        <input
-          type="text"
-          placeholder="Filtrar por nome"
-          value={searchTerm}
-          onChange={handleSearch}
-        />
+        <div>
+          <LabelFilter>Pesquisar Pelo Nome:</LabelFilter>
+          <InputFilter
+            type="text"
+            value={searchTerm}
+            onChange={handleSearch}
+          />
+        </div>
         <CardAkatsuki listakatsuki={listAkatsuki} />
-        {/* <div>
+        <div>
           {currentPage > 1 && (
             <button onClick={() => setCurrentPage(currentPage - 1)}>
               Anterior
@@ -59,7 +62,7 @@ export const Akatsuki = () => {
               Próxima
             </button>
           )}
-        </div> */}
+        </div>
       </AkatsukiContainer>
     </>
   );

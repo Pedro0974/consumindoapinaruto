@@ -1,7 +1,5 @@
 // routes/Coordinator.js
-export const goToHomePage = (navigate) => {
-  navigate("/");
-};
+
 export const goToCharactersPage = (navigate) => {
   navigate("/characters");
 };
